@@ -1,0 +1,51 @@
+{
+  "statusMap": {
+    "todo": "🆕 Todo (待办项目)",
+    "doing": "🚧 Doing (正在进行)",
+    "blocking": "⏳ Blocking (被动阻塞)",
+    "done": "✅ Done (已完成)",
+    "canceled": "❌ Canceled (已取消)"
+  },
+  "priorityMap": {
+    "P0": "🔴 P0 (最高优先级)",
+    "P1": "🟡 P1 (普通优先级)",
+    "P2": "🔵 P2 (低优先级)"
+  },
+  "qualityMap": {
+    "⭐": "⭐ (低价值/仅了解)",
+    "⭐⭐": "⭐⭐ (中等/有参考价值)",
+    "⭐⭐⭐": "⭐⭐⭐ (高价值/核心参考)"
+  },
+  "topicMap": {
+    "Programming": "💻 Programming (编程开发)",
+    "Writing": "✍️ Writing (创作技巧)",
+    "Anime": "📺 Anime (番剧/ACGN)",
+    "Life": "🌱 Life (生活/综合)"
+  },
+  "viewConfigs": [
+    {
+      "sectionTitle": "任务",
+      "typeValue": "project",
+      "matchType": "some",
+      "fields": ["文件名", "状态", "优先级", "创建时间", "截止日期"]
+    },
+    {
+      "sectionTitle": "领域",
+      "typeValue": "area",
+      "matchType": "some",
+      "fields": ["文件名", "创建时间"]
+    },
+    {
+      "sectionTitle": "资料",
+      "typeValue": "resource",
+      "matchType": "some",
+      "fields": ["文件名", "价值", "主题", "创建时间"]
+    },
+    {
+      "sectionTitle": "归档",
+      "typeValue": "archive",
+      "matchType": "some",
+      "fields": ["文件名", "状态", "优先级", "创建时间", "截止日期"]
+    }
+  ]
+}
