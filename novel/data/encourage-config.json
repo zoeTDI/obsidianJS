@@ -1,0 +1,34 @@
+{
+  "globalAvatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=writing-coach",
+  "rules": [
+    {
+      "minPercent": 0,
+      "maxPercent": 49.9,
+      "color": "#ff4d4f",
+      "text": [
+        "当前章剧情刚刚展开，字数还稍显单薄。<br>不妨再润色一下场景细节，或者为主角安排一场意料之外的冲突，让故事丰满起来吧！",
+        "万事开头难！脑洞已经有了，现在只需要动动手指把它们变成文字，再丰富一些细节吧！"
+      ]
+    },
+    {
+      "minPercent": 50,
+      "maxPercent": 99.9,
+      "color": "#faad14",
+      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=keep-going",
+      "text": [
+        "字数已经过半，剧情渐入佳境！<br>场景间的承接过渡已经初见成效，再补充一些动作细节或高潮铺垫，马上就能迎来本章的完美收尾了，加油！",
+        "进度过半！读者的胃口已经被吊起来了，接下来是本章冲突升级还是爽点爆发？一鼓作气写完它！"
+      ]
+    },
+    {
+      "minPercent": 100,
+      "maxPercent": 999,
+      "color": "#52c41a",
+      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=victory",
+      "text": [
+        "太棒了！本章字数已成功突破标准线，结构饱满，核心冲突交代得十分清晰。<br>当前章节已具备极佳的连载体感，起承转合十分到位，请保持这个高燃状态，胜利就在前方！",
+        "完美收官！这一章的情绪高潮铺垫得非常到位，字数很扎实，快去喝杯水奖励一下自己！"
+      ]
+    }
+  ]
+}
