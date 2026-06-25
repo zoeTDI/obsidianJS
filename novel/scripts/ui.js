@@ -45,7 +45,7 @@ function createIndicatorSpan(detailsEl) {
   return indicatorSpan;
 }
 
-function createNameSpan(data, config) {
+function createNameSpan(data, config, fn) {
   const nameSpan = document.createElement("span");
   nameSpan.style.color = "var(--text-accent)";
   nameSpan.textContent = `${config.prefix || ""} ${data.fileName}`;
@@ -54,7 +54,8 @@ function createNameSpan(data, config) {
   nameSpan.onmouseleave = () => nameSpan.style.textDecoration = "none";
   nameSpan.onclick = (e) => {
     e.stopPropagation();
-    openNote(data.filePath, config.linkMode || "tab");
+    e.preventDefault();
+    fn(e);
   };
   return nameSpan
 }

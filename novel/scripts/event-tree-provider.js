@@ -347,7 +347,11 @@ function renderConfigDrivenTree(treeData, container, config) {
 
         const indicatorSpan = createIndicatorSpan(detailsEl);
 
-        const nameSpan = createNameSpan(parentData, parentConfig);
+        const nameSpan = createNameSpan(
+            parentData, 
+            parentConfig,
+            (e) => openNote(parentData.filePath, parentConfig.linkMode || "tab")
+        );
 
         leftBox.appendChild(indicatorSpan);
         leftBox.appendChild(nameSpan);
