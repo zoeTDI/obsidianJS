@@ -6,6 +6,7 @@ const treeConfig = {
       prefix: "📖",
       canToggle: true,
       linkMode: "tab",
+      rightFields: [],
       fields: []
     },
     {
@@ -14,6 +15,7 @@ const treeConfig = {
       prefix: "🎬",
       canToggle: false,
       linkMode: "tab",
+      rightFields: [],
       fields: [
         {
           fieldName: "summary",

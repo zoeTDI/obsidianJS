@@ -10,6 +10,12 @@ const treeConfig = {
       prefix: "📖",
       canToggle: true,
       linkMode: "tab",
+      rightFields: [
+        {
+          fieldName: "words",
+          formatter: (page, val) => `${val || 0} 字`
+        }
+      ],
       fields: []
     },
     {
@@ -17,7 +23,10 @@ const treeConfig = {
       refField: "chapter",
       prefix: "🎬",
       canToggle: false,
-      linkMode: "tab",
+      linkMode: "tab", 
+      rightFields: [
+        { fieldName: "words", formatter: (page, val) => `${val || 0} 字` }
+      ],
       fields: [
         {
           fieldName: "summary",
