@@ -27,6 +27,7 @@ function renderProgressUI(avatarUrl, text, themeColor) {
     if (avatarUrl && avatarUrl.trim() !== "") {
         const avatarImg = document.createElement("img");
         avatarImg.src = avatarUrl.trim();
+        avatarImg.style.margin = 'auto 0';
         avatarImg.style.width = "42px";
         avatarImg.style.height = "42px";
         avatarImg.style.borderRadius = "50%";      // 裁剪成完美的圆形
